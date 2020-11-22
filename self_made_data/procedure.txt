@@ -1,0 +1,10 @@
+1 - Replace smiley by "happy", "bad" and delete other emoticons.
+2 - Decontract words (won't -> will not)
+3 - Delete "<user>", "rt", "\n" and "<url>".
+4 - Squeeze reapeting words (I'm laaazzzyyyy -> I'm lazy).
+5 - Delete non alphabetic words.
+6 - Transform all characters to lower case and make sure that there is only 1 white space between words.
+7 - Delete stop words.
+8 - Lemmatize.
+
+It takes ~30 minutes.
