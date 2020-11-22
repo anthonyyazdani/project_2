@@ -10,7 +10,7 @@ THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
 - 2 (or 3) different embeddings:
 	- "self made" glove
 	- Stanford twitter 200d glove
-	(- Stanford 200d glove)
+	- (Stanford 200d glove)
 
 - Classical Machine Learning:
 	- Naive bayes
@@ -20,4 +20,4 @@ THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
 - Deep learning:
 	- LSMT
 	- CNN
-	(- CNN + LSTM)
+	- (CNN + LSTM)
