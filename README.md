@@ -17,7 +17,7 @@ THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
 	- Logistic regression
 	- Multilayer perceptron
 
-- Deep learning:
+- Advanced methods:
 	- LSMT
 	- CNN
 	- (CNN + LSTM)
