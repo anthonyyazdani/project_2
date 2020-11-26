@@ -15,9 +15,9 @@
 	
 ### Download requirements
 - Stanford glove:
-	- glove.twitter.27B.200d[http://nlp.stanford.edu/data/glove.twitter.27B.zip]
+	- [glove.twitter.27B.200d](http://nlp.stanford.edu/data/glove.twitter.27B.zip)
 - Dataset:
-	- 
+	- [data](https://www.aicrowd.com/challenges/epfl-ml-text-classification#dataset)
 
 ### Summary
 
