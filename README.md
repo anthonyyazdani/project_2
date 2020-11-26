@@ -1,6 +1,6 @@
 # project_2
 
-**Folder structure in tree form**
+TODO : **Folder structure in tree form**
 
 ### Requirements
 - Hardware:
