@@ -1,5 +1,7 @@
 # project_2
 
+**Folder structure in tree form**
+
 ### Requirements
 - Hardware:
 	- 16GB ram
