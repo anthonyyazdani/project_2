@@ -1,7 +1,25 @@
 # project_2
 
+### Requirements
+- Hardware:
+	- 16GB ram
+	- 6GB CUDA graphic card
+- Software:
+	- Windows 10
+- Python:
+	- ?
+- Libraries:
+	- ?
+	- ?
+	- ?
+	
+### Download requirements
+- Stanford glove:
+	- glove.twitter.27B.200d[http://nlp.stanford.edu/data/glove.twitter.27B.zip]
+- Dataset:
+	- 
 
-## Summary
+### Summary
 
 - 2 different data processing:
 
