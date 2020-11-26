@@ -16,8 +16,10 @@
 ### Download requirements
 - Stanford glove:
 	- [glove.twitter.27B.200d](http://nlp.stanford.edu/data/glove.twitter.27B.zip)
+	- Add "glove.twitter.27B.200d.txt" to ~\project_2\embeddings\stanford_glove
 - Dataset:
 	- [data](https://www.aicrowd.com/challenges/epfl-ml-text-classification#dataset)
+	- Add "train_*_full.txt" files to ~\project_2\raw_data
 
 ### Summary
 
