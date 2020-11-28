@@ -128,7 +128,7 @@ class GLOVE(torch.nn.Module):
         self.dataset = cooc_data(coocurrence_matrix)
         self.dico = dico
 
-    def train(self, num_epoch, batch_size=512, learning_rate=0.001):
+    def train(self, num_epoch, batch_size=512, learning_rate=0.001, early_stopping=3):
         """
         Train the model.
         """
@@ -140,14 +140,30 @@ class GLOVE(torch.nn.Module):
 
         optimizer = optim.Adam(self.parameters(), lr=learning_rate)
         glove_dataloader = DataLoader(self.dataset, batch_size, shuffle=True)
-        display_loss = 0
-
+        
+        # Early stopping
+        previous_display_loss = np.inf
+        no_improvement_counter = list(np.zeros(early_stopping).astype(int))
+        
         for epoch in range(num_epoch):
+            
+            # Progress bar
+            numerator = 0
+            
+            # Summary
+            display_loss = 0
+            
             for idx, batch in enumerate(glove_dataloader):
+                
                 optimizer.zero_grad()
 
                 temp = batch
                 i_s, j_s, counts = temp[:, 0], temp[:, 1], temp[:, 2]
+                
+                # Progress bar
+                numerator += len(i_s)
+                perc = round((numerator/(self.vocab_size)**2)*100)
+                
                 i_s = i_s.to(device)
                 j_s = j_s.to(device)
                 counts = counts.to(device)
@@ -156,12 +172,26 @@ class GLOVE(torch.nn.Module):
                 display_loss += loss.item()
                 loss.backward()
                 optimizer.step()
-                torch.autograd.set_detect_anomaly(True)
+                # torch.autograd.set_detect_anomaly(True)
+                print(f"Epoch progress : {perc}%                 \r", end="")
 
-            print("epoch: {}, loss: {}".format(epoch, display_loss))
-            display_loss = 0
-
-        print("Done !")
+            print("Epoch: {}, mean loss: {}".format(epoch+1, round(display_loss, 4)))
+            
+            # Early stopping
+            if previous_display_loss <= display_loss:
+                no_improvement_counter.append(1)
+            else:
+                no_improvement_counter.append(0)
+            
+            if sum(no_improvement_counter[-early_stopping:]) == early_stopping:
+                print("------------ Early stopping ------------")
+                print(f"No improvement in loss {early_stopping} times in a row.")
+                print("----------------------------------------")
+                break
+                
+            previous_display_loss = display_loss
+            
+        print("Training done !")
 
     def cost_function(self, word_input, context_input, coocurrence_count):
         """
