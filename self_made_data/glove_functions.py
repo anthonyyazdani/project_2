@@ -62,7 +62,7 @@ def cooc_mat(text, number_of_words):
 
     # Construct co-occurrence matrix
 
-    res = np.zeros((number_of_words, number_of_words))
+    res = np.zeros((number_of_words, number_of_words)).astype(np.int32)
 
     for sentence in tqdm(sentences):
         comb = combinations_with_replacement(sentence, 2)
@@ -71,12 +71,13 @@ def cooc_mat(text, number_of_words):
 
     res = res + res.T - np.diag(np.diag(res))
     res = res[1:, 1:]
-    res = np.array([np.kron(np.arange(len(res)), np.ones(len(res))),
-                    np.outer(np.arange(len(res)),
-                             np.ones(len(res))).T.flatten(),
+    res = np.array([np.kron(np.arange(len(res)).astype(np.int16), np.ones(len(res)).astype(np.int16)).astype(np.int16),
+                    np.outer(np.arange(len(res)).astype(np.int16), np.ones(len(res)).astype(np.int16)).T.flatten().astype(np.int16),
                     res.flatten()]).T
 
-    return res, dico
+    light_res = np.delete(arr=res, obj=np.where(res[:, 2] <= 0)[0], axis=0)
+
+    return light_res, dico
 
 
 class cooc_data(Dataset):
@@ -127,6 +128,7 @@ class GLOVE(torch.nn.Module):
         coocurrence_matrix, dico = cooc_mat(text, self.vocab_size)
         self.dataset = cooc_data(coocurrence_matrix)
         self.dico = dico
+        self.datalen = len(coocurrence_matrix)
 
     def train(self, num_epoch, batch_size=512, learning_rate=0.001, early_stopping=3):
         """
@@ -162,11 +164,11 @@ class GLOVE(torch.nn.Module):
                 
                 # Progress bar
                 numerator += len(i_s)
-                perc = round((numerator/(self.vocab_size)**2)*100)
+                perc = round((numerator/self.datalen)*100)
                 
                 i_s = i_s.to(device)
                 j_s = j_s.to(device)
-                counts = counts.to(device)
+                counts = counts.type(torch.float64).to(device)
                 loss = self.cost_function(i_s, j_s, counts)
 
                 display_loss += loss.item()
@@ -222,7 +224,7 @@ class GLOVE(torch.nn.Module):
         equation_1 = torch.pow(coocurrence_count / x_max, alpha)
         equation_1[equation_1 > 1] = 1
         embedding_multiplication = torch.sum(word_emb * context_emb, dim=1)
-        log_cooc = torch.log(coocurrence_count + 1)  # + 1 to avoid log(0)
+        log_cooc = torch.log(coocurrence_count)
         equation_2 = (embedding_multiplication + word_bias +
                       context_bias - log_cooc) ** 2
 

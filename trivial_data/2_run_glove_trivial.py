@@ -1,13 +1,14 @@
 from glove_functions import *
 import os
+import time
 import json
 
 ####################
 embedding_size = 200
-vocab_size = 3000
+vocab_size = 20000
 num_epoch = 100
 batch_size = 512
-learning_rate = 0.001
+learning_rate = 0.0001
 early_stopping = 3
 ####################
 
@@ -44,15 +45,28 @@ print("\n")
 
 print("----------------------------------------")
 print("Beginning of training...")
+
+
+start = time.time()
+
 model.train(num_epoch=num_epoch, batch_size=batch_size,
             learning_rate=learning_rate, early_stopping=early_stopping)
 embeddings, traductions = model.get_embeddings()
 print("\n")
 
+end = time.time()
+temp = end-start
+hours = temp//3600
+temp = temp - 3600*hours
+minutes = temp//60
+seconds = temp - 60*minutes
+print("Elapsed time :", '%d:%d:%d' %(hours,minutes,seconds))
+
+
 # Saving results
 print("----------------------------------------")
 print("Saving results...")
-with open(SAVING_DIR + '\\embeddings\\glove\\glove_trivial_200d.txt', 'w') as filehandle:
+with open(SAVING_DIR + '\\embeddings\\glove\\glove_trivial_200d.txt', 'w', encoding='utf-8') as filehandle:
     for listitem in traductions:
         filehandle.write('%s\n' % listitem)
 print("Saving done !")
