@@ -49,5 +49,5 @@ THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
 	- CNN
 	- (CNN + LSTM)
 -------------------------------
-Results on test set:
+- Results on test set:
 	- glove + trivial dtp + MLP : acc = 0.682, f1 = 0.673
