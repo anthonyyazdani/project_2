@@ -6,7 +6,7 @@ import json
 ####################
 embedding_size = 200
 vocab_size = 20000
-num_epoch = 100
+num_epoch = 50
 batch_size = 512
 learning_rate = 0.0001
 early_stopping = 3
