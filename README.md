@@ -6,7 +6,7 @@ TODO : **Folder structure in tree form**
 
 ### Requirements
 - Hardware:
-	- 8GB ram (16GB/32GB ram if you want to have a large number of words in your vocabulary for the glove)
+	- 16GB ram (32GB ram if you want to have a large number of words in your vocabulary for the glove)
 	- CUDA graphic card
 - Software:
 	- Windows 10
