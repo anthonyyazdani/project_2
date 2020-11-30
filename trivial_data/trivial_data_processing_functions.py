@@ -27,5 +27,7 @@ def process_text_trivial(text_file):
         i = delete_user_rt_n_url(i)
         i = delete_non_alphabetic(i)
         i = standardize(i)
+        if len(i)<=0:
+            i = "nan"
         OUT.append(i)
     return OUT

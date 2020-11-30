@@ -152,6 +152,8 @@ def process_text(text_file, spell=False):
         temp = standardize(temp)
         temp = delete_stop_words(temp)
         temp = lemmatize(temp)
+        if len(temp)<=0:
+            temp = "nan"
         text_file[R] = temp
 
     return text_file
