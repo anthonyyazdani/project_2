@@ -5,17 +5,27 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 TODO : **Folder structure in tree form**
 
 ### Requirements
-- Hardware:
+- Minimum hardware requirements:
 	- 16GB ram (32GB ram if you want to have a large number of words in your vocabulary for the glove)
-	- CUDA graphic card
+	- 6GB CUDA graphic card
 - Software:
 	- Windows 10
 - Python:
-	- ?
+	- 3.8.3
 - Libraries:
-	- ?
-	- ?
-	- ?
+	- gensim
+	- tqdm
+	- numpy
+	- json
+	- sklearn
+	- csv
+	- nltk
+	- itertools
+	- tensorflow
+	- pytorch (GPU)
+	- collections
+	- re
+	- time
 	
 ### Download requirements
 - Stanford glove:
