@@ -11,7 +11,7 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 ├── run_glove.py (Run home made glove)
 
 ├── raw_data
-│   ├── ... (All needed datasets)
+│   ├── ... **(need to download, see README)**
 
 ├── self_made_data
 │   ├── run_self_made_dtp.py (Run so-called "self made" data processing)
@@ -28,34 +28,16 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 ├── nn_models
 │   └── ... (dedicated to saving neural networks)
 
+├── embeddings
+│   └── glove
+│   │   └── glove_200d.txt (Home made glove)
+│   └── stanford_glove
+│   │   └── ... **(need to download, see README)**
+
 ├── functions
 │   ├── classical_ML_functions.py (All needed functions for "classical ML" methods)
-│   ├── glove_functions.py
-│   └── nn_functions.py
-
-# Internal project notes
-├── requirements.txt       # python libraries
-├── res                    # Results of our model
-│   ├── img                # Loss plots
-│   │   └── ....png
-│   ├── model              # Model checkpoints 
-│   │   ├── Dense_Final
-│   │   ├── Shallow_Final
-│   │   └── best
-│   └── pred               # Model predictions
-│       └── submission_best.csv
-└── src
-    ├── baselines.py
-    ├── blending.py
-    ├── data.py
-    ├── exploration.py
-    ├── model_graveyard.py
-    ├── models.py
-    ├── pipe.py
-    ├── pipeline.py
-    ├── run.py
-    ├── surprise_lib.py
-    └── utils.py
+│   ├── glove_functions.py (All needed functions for glove)
+│   └── nn_functions.py (All needed functions for "advanced ML" methods)
 ```
 
 ### Requirements
