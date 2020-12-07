@@ -35,11 +35,11 @@ TODO : **Folder structure in tree form**
 	- [data](https://www.aicrowd.com/challenges/epfl-ml-text-classification#dataset)
 	- Add "train_*_full.txt" files to ~\project_2\raw_data
 - nltm:
-	import nltk
+	'''import nltk
 	nltk.download('stopwords')
 	nltk.download('wordnet')
 	nltk.download('punkt')
-	nltk.download("opinion_lexicon")
+	nltk.download("opinion_lexicon")'''
 
 ### Summary
 
