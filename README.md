@@ -10,13 +10,20 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 ├── README.md
 ├── run_glove.py (Run home made glove)
 
-├── raw_data (Datasets)
-│   ├── ... (All needed files)
+├── raw_data
+│   ├── ... (All needed datasets)
+
+├── self_made_data
+│   ├── run_self_made_dtp.py (Run so-called "self made" data processing)
+│   ├── procedure.txt (Quick explanation of the "self made" data processing method)
+│   ├── procedure.txt (Quick explanation of the "trivial" data processing method)
+│   └── self_made_data_processing_functions.py (functions for run_self_made_dtp.py)
 
 ├── trivial_data
 │   ├── 1_run_trivial_dtp.py (Run so-called "trivial" data processing)
 │   ├── 2_run_to_csv.py (Run after 1_run_trivial_dtp.py, used for Advanced_ML_* notebooks)
-│   └── procedure.txt (Quick explanation of the "trivial" data processing method)
+│   ├── procedure.txt (Quick explanation of the "trivial" data processing method)
+│   └── trivial_data_processing_functions.py (functions for 1_run_trivial_dtp.py)
 
 ├── notes.md               # Internal project notes
 ├── requirements.txt       # python libraries
