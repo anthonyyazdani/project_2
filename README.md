@@ -3,7 +3,10 @@
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 ```bash
-├── Dockerfile
+├── Advanced_ML_glove_200d.ipynb : CNN and BI-LSTM RNN using home made glove.
+├── Advanced_ML_stanford_glove_200d.ipynb : CNN and BI-LSTM RNN using Stanford's glove.
+├── Classical_ML_glove_200d.ipynb : Naive Bayes, Logistic regression and multilayer perceptron using home made glove.
+├── Classical_ML_stanford_glove_200d.ipynb : Naive Bayes, Logistic regression and multilayer perceptron using Stanford's glove.
 ├── README.md
 ├── data                    # Datasets
 │   ├── data.tgz            # Given data
@@ -68,7 +71,6 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 	- [data](https://www.aicrowd.com/challenges/epfl-ml-text-classification#dataset)
 	- Add "train_*_full.txt" files to ~\project_2\raw_data
 - nltk:
-
 	```import nltk```
 	
 	```nltk.download('stopwords')```
