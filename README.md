@@ -2,7 +2,38 @@
 
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
-TODO : **Folder structure in tree form**
+├── Dockerfile
+├── README.md
+├── data                    # Datasets
+│   ├── data.tgz            # Given data
+│   ├── embeddings          # Pre-computed embeddings
+│       └── embeddings.tgz
+├── notebook                # For data exploration
+│   ├── Exploration.ipynb
+│   └── NN.ipynb
+├── notes.md               # Internal project notes
+├── requirements.txt       # python libraries
+├── res                    # Results of our model
+│   ├── img                # Loss plots
+│   │   └── ....png
+│   ├── model              # Model checkpoints 
+│   │   ├── Dense_Final
+│   │   ├── Shallow_Final
+│   │   └── best
+│   └── pred               # Model predictions
+│       └── submission_best.csv
+└── src
+    ├── baselines.py
+    ├── blending.py
+    ├── data.py
+    ├── exploration.py
+    ├── model_graveyard.py
+    ├── models.py
+    ├── pipe.py
+    ├── pipeline.py
+    ├── run.py
+    ├── surprise_lib.py
+    └── utils.py
 
 ### Requirements
 - Minimum hardware requirements:
