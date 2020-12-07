@@ -3,18 +3,21 @@
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 ```bash
-├── Advanced_ML_glove_200d.ipynb : CNN and BI-LSTM RNN using home made glove.
-├── Advanced_ML_stanford_glove_200d.ipynb : CNN and BI-LSTM RNN using Stanford's glove.
-├── Classical_ML_glove_200d.ipynb : Naive Bayes, Logistic regression and multilayer perceptron using home made glove.
-├── Classical_ML_stanford_glove_200d.ipynb : Naive Bayes, Logistic regression and multilayer perceptron using Stanford's glove.
+├── Advanced_ML_glove_200d.ipynb (CNN and BI-LSTM RNN using home made glove)
+├── Advanced_ML_stanford_glove_200d.ipynb (CNN and BI-LSTM RNN using Stanford's glove)
+├── Classical_ML_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using home made glove)
+├── Classical_ML_stanford_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using Stanford's glove)
 ├── README.md
-├── data                    # Datasets
-│   ├── data.tgz            # Given data
-│   ├── embeddings          # Pre-computed embeddings
-│       └── embeddings.tgz
-├── notebook                # For data exploration
-│   ├── Exploration.ipynb
-│   └── NN.ipynb
+├── run_glove.py (Run home made glove)
+
+├── raw_data (Datasets)
+│   ├── ... (All needed files)
+
+├── trivial_data
+│   ├── 1_run_trivial_dtp.py (Run so-called "trivial" data processing)
+│   ├── 2_run_to_csv.py (Run after 1_run_trivial_dtp.py, used for Advanced_ML_* notebooks)
+│   └── procedure.txt (Quick explanation of the "trivial" data processing method)
+
 ├── notes.md               # Internal project notes
 ├── requirements.txt       # python libraries
 ├── res                    # Results of our model
