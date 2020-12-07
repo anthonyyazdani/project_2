@@ -3,12 +3,19 @@
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 ```bash
-├── Advanced_ML_glove_200d.ipynb (CNN and BI-LSTM RNN using home made glove)
-├── Advanced_ML_stanford_glove_200d.ipynb (CNN and BI-LSTM RNN using Stanford's glove)
-├── Classical_ML_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using home made glove)
-├── Classical_ML_stanford_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using Stanford's glove)
-├── README.md
-├── run_glove.py (Run home made glove)
+├── embeddings
+│   └── glove
+│   │   └── glove_200d.txt (Home made glove)
+│   └── stanford_glove
+│   │   └── ... **(need to download, see README)**
+
+├── functions
+│   ├── classical_ML_functions.py (All needed functions for "classical ML" methods)
+│   ├── glove_functions.py (All needed functions for glove)
+│   └── nn_functions.py (All needed functions for "advanced ML" methods)
+
+├── nn_models
+│   └── ... (dedicated to saving neural networks)
 
 ├── raw_data
 │   ├── ... **(need to download, see README)**
@@ -25,19 +32,12 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 │   ├── procedure.txt (Quick explanation of the "trivial" data processing method)
 │   └── trivial_data_processing_functions.py (functions for 1_run_trivial_dtp.py)
 
-├── nn_models
-│   └── ... (dedicated to saving neural networks)
-
-├── embeddings
-│   └── glove
-│   │   └── glove_200d.txt (Home made glove)
-│   └── stanford_glove
-│   │   └── ... **(need to download, see README)**
-
-├── functions
-│   ├── classical_ML_functions.py (All needed functions for "classical ML" methods)
-│   ├── glove_functions.py (All needed functions for glove)
-│   └── nn_functions.py (All needed functions for "advanced ML" methods)
+├── Advanced_ML_glove_200d.ipynb (CNN and BI-LSTM RNN using home made glove)
+├── Advanced_ML_stanford_glove_200d.ipynb (CNN and BI-LSTM RNN using Stanford's glove)
+├── Classical_ML_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using home made glove)
+├── Classical_ML_stanford_glove_200d.ipynb (Naive Bayes, Logistic regression and multilayer perceptron using Stanford's glove)
+├── README.md
+├── run_glove.py (Run home made glove)
 ```
 
 ### Requirements
