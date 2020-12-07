@@ -2,6 +2,7 @@
 
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
+```bash
 ├── Dockerfile
 ├── README.md
 ├── data                    # Datasets
@@ -34,6 +35,7 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
     ├── run.py
     ├── surprise_lib.py
     └── utils.py
+```
 
 ### Requirements
 - Minimum hardware requirements:
