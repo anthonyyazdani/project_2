@@ -16,8 +16,8 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 ├── self_made_data
 │   ├── run_self_made_dtp.py (Run so-called "self made" data processing)
 │   ├── procedure.txt (Quick explanation of the "self made" data processing method)
-│   ├── procedure.txt (Quick explanation of the "trivial" data processing method)
-│   └── self_made_data_processing_functions.py (functions for run_self_made_dtp.py)
+│   ├── self_made_data_processing_functions.py (functions for run_self_made_dtp.py)
+│   └── ... (All needed .csv files for this data processing method)
 
 ├── trivial_data
 │   ├── 1_run_trivial_dtp.py (Run so-called "trivial" data processing)
@@ -25,7 +25,15 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 │   ├── procedure.txt (Quick explanation of the "trivial" data processing method)
 │   └── trivial_data_processing_functions.py (functions for 1_run_trivial_dtp.py)
 
-├── notes.md               # Internal project notes
+├── nn_models
+│   └── ... (dedicated to saving neural networks)
+
+├── functions
+│   ├── classical_ML_functions.py (All needed functions for "classical ML" methods)
+│   ├── glove_functions.py
+│   └── nn_functions.py
+
+# Internal project notes
 ├── requirements.txt       # python libraries
 ├── res                    # Results of our model
 │   ├── img                # Loss plots
