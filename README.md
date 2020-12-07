@@ -12,7 +12,7 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 ├── Advanced_ML_results
 │   ├── glove/trivial
 │   │   └── ... (predictions)
-│   └── stanford_glove/trivial
+│   ├── stanford_glove/trivial
 │   │   └── ... (predictions)
 
 ├── Classical_ML_results
