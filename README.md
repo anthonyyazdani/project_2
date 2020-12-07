@@ -1,5 +1,9 @@
 overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
+1 - Make sure that all run.py works
+2 - finish the README
+3 - Make sure that the file sent is as small as possible (remove the .txt or .csv that can be recreated with our run.py, then add the creation procedure in the final RUN.py)
+
 # Structure
 
 ```bash
