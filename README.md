@@ -86,6 +86,7 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 	- collections
 	- re
 	- time
+	- spacy
 	
 ### Download requirements
 - Stanford glove:
