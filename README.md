@@ -6,6 +6,8 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 3 - Make sure that the file sent is as small as possible (remove the .txt or .csv that can be recreated with our run.py, then add the creation procedure in the final RUN.py)
 
+4 - Do not forget to quote the github of where we found our ideas. In particular, for the GLOVE and BI_LSTM / CNN.
+
 # Structure
 
 ```bash
