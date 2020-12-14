@@ -10,7 +10,7 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 5 - Abstract
 
-6 - Test set accuracy
+6 - Test set accuracy (histogram ?)
 
 # Structure
 
