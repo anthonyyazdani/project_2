@@ -8,6 +8,8 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 
 4 - Do not forget to quote the github of where we found our ideas. In particular, for the GLOVE and BI_LSTM / CNN.
 
+5 - Abstract
+
 # Structure
 
 ```bash
