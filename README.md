@@ -1,6 +1,6 @@
-!!!!!!!! IMPORTANT !!!!!!!!!!!!!
+!!!!!!!! IMPORTANT !!!!!!!!!
 
-Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_data' folder.
+Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_data' folder and download the requirements mentionned below .
 
 
 
@@ -92,10 +92,10 @@ Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_d
 - Stanford glove:
         ('emptyfile.txt' is here to fill the folder but it is not used)
 	- [glove.twitter.27B.200d](http://nlp.stanford.edu/data/glove.twitter.27B.zip)
-	- Add "glove.twitter.27B.200d.txt" to ~\project_2\embeddings\stanford_glove
+	- Add "glove.twitter.27B.200d.txt" to ~/project_2/embeddings/stanford_glove
 - Dataset:
 	- [data](https://www.aicrowd.com/challenges/epfl-ml-text-classification#dataset)
-	- Add "train_*_full.txt" files to ~\project_2\raw_data
+	- Add "train_*_full.txt" files to ~/project_2/raw_data
 - nltk:
 	```import nltk```
 	
