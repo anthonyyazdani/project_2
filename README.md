@@ -1,3 +1,10 @@
+!!!!!!!! IMPORTANT !!!!!!!!!!!!!
+
+Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_data' folder.
+
+
+
+
 # Structure
 
 ```bash
