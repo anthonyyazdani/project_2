@@ -1,17 +1,3 @@
-overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
-
-1 - Make sure that all run.py works
-
-2 - finish the README (like in proj 1)
-
-3 - Make sure that the file sent is as small as possible (remove the .txt or .csv that can be recreated with our run.py, then add the creation procedure in the final RUN.py)
-
-4 - Do not forget to quote the github of where we found our ideas. In particular, for the GLOVE and BI_LSTM / CNN.
-
-5 - Abstract
-
-6 - Test set accuracy (histogram ?)
-
 # Structure
 
 ```bash
@@ -93,9 +79,11 @@ overleaf : https://www.overleaf.com/project/5f8b59404f02e600016c7df1
 	- re
 	- time
 	- spacy
+        -torchtext
 	
 ### Download requirements
 - Stanford glove:
+        ('emptyfile.txt' is here to fill the folder but it is not used)
 	- [glove.twitter.27B.200d](http://nlp.stanford.edu/data/glove.twitter.27B.zip)
 	- Add "glove.twitter.27B.200d.txt" to ~\project_2\embeddings\stanford_glove
 - Dataset:

@@ -15,9 +15,9 @@ early_stopping = 3
 # Load data
 print("----------------------------------------")
 print("Loading data...")
-data, labels, test = load_data('trivial_data\\trivial_positive.txt',
-                               'trivial_data\\trivial_negative.txt',
-                               'trivial_data\\trivial_test.txt',
+data, labels, test = load_data('trivial_data/trivial_positive.txt',
+                               'trivial_data/trivial_negative.txt',
+                               'trivial_data/trivial_test.txt',
                                subset=False)
 
 # Get full text in one file
@@ -60,7 +60,7 @@ print("Elapsed time :", '%d:%d:%d' %(hours,minutes,seconds))
 # Saving results
 print("----------------------------------------")
 print("Saving results...")
-with open('embeddings\\glove\\glove_200d.txt', 'w', encoding='utf-8') as filehandle:
+with open('embeddings/glove/glove_200d.txt', 'w', encoding='utf-8') as filehandle:
     for listitem in traductions:
         filehandle.write('%s\n' % listitem)
 print("Saving done !")
