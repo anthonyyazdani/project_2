@@ -1,4 +1,4 @@
-#We would like to thank all contributors from https://github.com/bentrevett/pytorch-sentiment-analysis for inspiring us to the implementation of those neural network.
+#We would like to thank all contributors from https://github.com/bentrevett/pytorch-sentiment-analysis which guided us in the implementation of those neural network.
 
 import torch
 from torchtext import data
