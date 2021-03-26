@@ -112,8 +112,6 @@ Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_d
 	- "self made"
 	- "trivial"
 
-THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
-
 - 2 different embeddings:
 	- "self made" glove
 	- Stanford twitter 200d glove
@@ -123,12 +121,6 @@ THE FOLLOWING STEPS SHOULD BE DONE FOR THE TWO DIFFERENT DATA PROCESSING:
 	- Logistic regression
 	- Multilayer perceptron
 
-THE FOLLOWING STEPS SHOULD BE DONE ONLY ON TRIVIAL DATA:
-
-- 2 different embeddings:
-	- "self made" glove
-	- Stanford twitter 200d glove
-
 - Advanced methods:
-	- LSMT
+	- BILSTM
 	- CNN
