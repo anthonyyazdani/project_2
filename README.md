@@ -1,6 +1,4 @@
-!!!!!!!! IMPORTANT !!!!!!!!!
-
-Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_data' folder and download the requirements mentionned below .
+Before running 'run.py' you must run '2_run_to_csv.py' located in the 'trivial_data' folder and download the requirements mentioned below.
 
 
 
